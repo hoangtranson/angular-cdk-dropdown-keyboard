@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-jest-sample';
+  options = [
+    { id: 1, label: 'One' },
+    { id: 2, label: 'Two' },
+    { id: 3, label: 'Three' }
+  ];
+  control = new FormControl();
 }
