@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { OptionComponent } from './components/option/option.component';
+import { AutocompleteComponent } from './components/autocomplete/autocomplete.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OptionComponent,
+    AutocompleteComponent
   ],
   imports: [
     BrowserModule,
